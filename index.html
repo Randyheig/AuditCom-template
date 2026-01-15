@@ -36,15 +36,32 @@
             <h2>Les clubs Romands et leurs particularités digitales</h2>
             <h3>80% de la visibilité des clubs est faite par un média externe</h3>
             <img id="camembert" src="/AuditCom-template/images/undefined.png" alt="Camembert" class="image-hover">
+            <img id="graph" src="/AuditCom-template/images/image.jpeg" class="image-hover">
+            <h3>Plus de la moitié des sites analysés prennent plus de 5 secondes
+                au téléchargement. <br> Jusqu’à 8 secondes pour les mobiles.</h3>
+            <img id="chaine" src="/AuditCom-template/images/image copie.jpeg" class="image-hover">
+            <h3>Plus de 50 % des clubs vaudois possèdent au moins un canal digital inactif ou mal relié.</h3>
             <h2 id="center">Top 3 des clubs les mieux référencés</h2>
-            <img id="martigny" src="/AuditCom-template/images/image (1).png">
-            <img id="ouchy" src="/AuditCom-template/images/image (2).png">
-            <img id="lancy" src="/AuditCom-template/images/image.png">
+            <img id="martigny" src="/AuditCom-template/images/image (1).png" class="image-hover">
+            <img id="ouchy" src="/AuditCom-template/images/image (2).png" class="image-hover">
+            <img id="lancy" src="/AuditCom-template/images/image.png" class="image-hover">
         </section>
-        <div>
+        <section id="formulaire">
             <!-- id="downloadForm" : Formulaire pour télécharger le PDF. Le nom de cet ID ne doit pas être modifié. -->
-            <form id="downloadForm"></form>
-        </div>
+            <form id="downloadForm">
+                <h2>Télécharger le rapport complet</h2>
+                <label for="nom" class="nom">Nom</label>
+                <input type="text" name="nom" class="nom">
+                <label for="prénom" class="prénom">Prénom</label>
+                <input type="text" name="prénom" class="prénom">
+                <label for="email" class="email">Email</label>
+                <input type="email" name="email" class="email">
+                <label for="consent" class="consent">J'accepte de recevoir la newsletter</label>
+                <input type="checkbox" name="newsletterAgreement" class="consent">
+                <div id="messageContainer"></div>
+                <button type="submit">Télécharger</button>
+            </form>
+        </section>
     </main>
     <footer>
         <h3>Nous contacter</h3>
