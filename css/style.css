@@ -21,7 +21,9 @@ header {
 header a {
     color: white;
     text-decoration: none;
-    font-family: "zalandoh23";
+    padding: 0.25rem;
+    border: 3px solid white;
+    border-radius: 10%;
 }
 
 section#titre {
@@ -43,6 +45,7 @@ h2 {
 section#équipes>div {
     display: flex;
     gap: 1rem;
+    
 }
 
 section#équipes {
@@ -223,7 +226,7 @@ section#équipes {
     grid-template-areas:
         "titre titre"
         "nom prénom"
-        "email email"
+        "email rien"
         "newsletter newsletter"
         "message message"
         "bouton bouton";
@@ -239,10 +242,6 @@ section#équipes {
 
 input {
     justify-self: right;
-}
-
-input.email {
-    width: 85%;
 }
 
 input.consent {
