@@ -59,14 +59,22 @@
             <!-- id="downloadForm" : Formulaire pour télécharger le PDF. Le nom de cet ID ne doit pas être modifié. -->
             <form id="downloadForm">
                 <h2>Télécharger le rapport complet</h2>
-                <label for="nom" class="nom">Nom</label>
-                <input type="text" name="lastName" class="nom">
-                <label for="prénom" class="prénom">Prénom</label>
-                <input type="text" name="firstName" class="prénom">
-                <label for="email" class="email">Email</label>
-                <input type="email" name="email" class="email">
-                <input type="checkbox" name="newsletterAgreement" class="consent" required>
+                <div class="nom">
+                <label for="nom">Nom</label>
+                <input type="text" name="lastName" >
+                </div>
+                <div class="prénom">
+                <label for="prénom">Prénom</label>
+                <input type="text" name="firstName">
+                </div>
+                <div class="email">
+                <label for="email">Email</label>
+                <input type="email" name="email">
+                </div>
+                <div>
+                <input type="checkbox" name="newsletterAgreement" id="coche" class="consent" required>
                 <label for="consent" class="consent">J'accepte de recevoir la newsletter</label>
+                </div>
                 <button id="button" type="submit">Télécharger</button>
                 <div id="messageContainer"></div>
             </form>

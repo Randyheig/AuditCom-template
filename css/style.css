@@ -33,23 +33,23 @@ section#titre {
 }
 
 h1 {
-    font-size: 128px;
+    font-size: 4rem;
     line-height: 128px;
 }
 
 h2 {
-    font-size: 64px;
+    font-size: 2rem;
     color: #218b29;
 }
 
 section#équipes>div {
     display: flex;
-    gap: 1rem;
-    
+    gap: 1rem; 
+    flex-wrap: wrap;
 }
 
 section#équipes {
-    padding: 1rem 2rem 1rem 2rem;
+    padding: 2rem 2rem 2rem 2rem;
 }
 
 .logo-animation article {
@@ -60,7 +60,7 @@ section#équipes {
 }
 
 .logo-animation article img {
-    margin: 1rem 0 1rem 0;
+    margin: 10rem 0 1rem 0;
     filter: saturate(0);
     width: 150px;
 }
@@ -177,7 +177,6 @@ section#équipes {
     margin: 2rem 0 2rem 0;
     justify-self: center;
     width: 100%;
-    transform: rotate(45deg);
     align-self: center;
 }
 
@@ -222,16 +221,17 @@ section#équipes {
 #downloadForm {
     background-color: white;
     font-weight: bold;
-    display: grid;
-    grid-template-areas:
-        "titre titre"
-        "nom prénom"
-        "email rien"
-        "newsletter newsletter"
-        "message message"
-        "bouton bouton";
-    gap: 2rem;
+    display: block;
     padding: 2rem;
+}
+
+label {
+    display: inline-block;
+}
+
+#downloadForm div {
+    padding: 1rem;
+    justify-self: left;
 }
 
 #downloadForm h2 {
@@ -244,25 +244,21 @@ input {
     justify-self: right;
 }
 
+.consent {
+    width: 10%;
+    display: inline;
+}
+
 input.consent {
     justify-self: center;
-    width: 20%;
 }
 
-.nom {
-    grid-area: nom;
+#coche {
+    height: 1.5rem;
 }
 
-.prénom {
-    grid-area: prénom;
-}
-
-.email {
-    grid-area: email;
-}
-
-.consent {
-    grid-area: newsletter;
+#button {
+    width: 100%;
 }
 
 button {
@@ -321,7 +317,7 @@ h3 {
     }
 
     h3 {
-        font-size: 32px;
+        font-size: 12px;
     }
 
     section#équipes>div {
@@ -352,6 +348,10 @@ h3 {
             "texte3 chaine chaine"
             "titre2 titre2 titre2"
             "div div div";
+    }
+
+    #camembert {
+        width: 70%;
     }
 
     #graph {
