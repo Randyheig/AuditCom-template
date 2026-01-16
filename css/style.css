@@ -291,7 +291,7 @@ h3 {
     color: black;
 }
 
-@media screen and (max-width: 375px) {
+@media (max-width: 600px) {
 
     html {
         font-size: 12px;
@@ -306,8 +306,9 @@ h3 {
         height: 3rem;
     }
 
-    section#titre {
-        padding: 1rem;
+    #titre {
+        padding: 4rem;
+        line-height: 5rem;
     }
 
     h1 {
@@ -316,7 +317,7 @@ h3 {
     }
 
     h2 {
-        font-size: 48px;
+        font-size: 40px;
     }
 
     h3 {
@@ -393,8 +394,15 @@ h3 {
     }
 
     input.consent {
-        width: 100%;
+        width: 10%;
         height: 3rem;
+        vertical-align: middle;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+    }
+
+    #button {
+        width: 100%;
     }
 
     footer {
