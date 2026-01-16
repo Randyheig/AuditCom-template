@@ -1,22 +1,15 @@
 @import "reset.css";
 
+
+@import url('https://fonts.googleapis.com/css2?family=Zalando+Sans:ital,wght@0,200..900;1,200..900&display=swap');
+
 img {
     width: 250px;
 }
 
-@font-face {
-    font-family: "zalandoh23";
-    src: url(/fonts/Zalando_Sans/ZalandoSans_SemiExpanded-Regular.ttf);
-}
-
-@font-face {
-    font-family: "zalandoh1";
-    src: url(/fonts/Zalando_Sans/ZalandoSans_SemiExpanded-Bold.ttf)
-}
-
 html {
     font-size: 32px;
-    font-family: "zalandoh23";
+    font-family: "Zalando Sans", sans-serif;
 }
 
 header {
@@ -39,7 +32,6 @@ section#titre {
 
 h1 {
     font-size: 128px;
-    font-family: "zalandoh1";
     line-height: 128px;
 }
 
